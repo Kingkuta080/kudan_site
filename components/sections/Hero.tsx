@@ -16,8 +16,7 @@ export default function Hero() {
           className="text-center"
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Bridging Ideas,<br />
-            Connecting Solutions
+            Welcome to Kudan
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-emerald-100 max-w-2xl mx-auto">
             We transform your business challenges into innovative solutions through cutting-edge technology and expertise.
