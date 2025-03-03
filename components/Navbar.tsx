@@ -1,104 +1,85 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
-import { Button } from '@/components/ui/button'
-import { Link, Menu, X } from 'lucide-react'
-import Image from 'next/image'
+import { useState } from "react";
+import Link from "next/link";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
-export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-  const navItems = [
-    { label: 'About', href: '#about' },
-    { label: 'Services', href: '#services' },
-    { label: 'Products', href: '#products' },
-    { label: 'News', href: '#news' },
-    { label: 'Gallery', href: '#gallery' },
-  ]
+  const navLinks = [
+    { name: "Home", href: "/" },
+    { name: "About Kudan", href: "/about" },
+    { name: "Government", href: "/government" },
+    { name: "Projects", href: "/projects" },
+    { name: "Agriculture", href: "/agriculture" },
+    { name: "News & Events", href: "/news" },
+    { name: "Contact Us", href: "/contact" },
+  ];
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
-      }`}
-    >
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+    <nav className="bg-green-800 text-white sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <a href="/" className={`text-2xl font-bold ${isScrolled ? 'text-emerald-600' : 'text-white'}`}>
-            <Image src="/logo.png" alt="Kudan Logo" width={60} height={50} className=' object-contain'/>
-            </a>
+            <Link href="/" className="flex-shrink-0 font-bold text-xl">
+              KUDAN LGA
+            </Link>
           </div>
-
-          {/* Desktop Menu */}
-          <div className="mt-5 hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className={`hover:text-emerald-500 transition-colors ${
-                  isScrolled ? 'text-gray-600' : 'text-white'
-                }`}
-              >
-                {item.label}
-              </a>
-            ))}
-            <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">
-              Contact Us
+          
+          {/* Desktop menu */}
+          <div className="hidden md:block">
+            <div className="ml-10 flex items-baseline space-x-4">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="px-3 py-2 rounded-md text-sm font-medium hover:bg-green-700 transition-colors"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+          
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={toggleMenu}
+              className="text-white hover:bg-green-700"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </Button>
           </div>
+        </div>
+      </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`p-2 ${isScrolled ? 'text-gray-600' : 'text-white'}`}
-            >
-              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+      {/* Mobile menu */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-green-800 pb-3 px-2">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="block px-3 py-2 rounded-md text-base font-medium hover:bg-green-700 transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.name}
+              </Link>
+            ))}
           </div>
         </div>
+      )}
+    </nav>
+  );
+};
 
-        {/* Mobile Menu */}
-        {isMobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="md:hidden bg-white shadow-lg rounded-lg mt-2 py-4"
-          >
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="block px-4 py-2 text-gray-600 hover:bg-emerald-50 hover:text-emerald-600"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {item.label}
-              </a>
-            ))}
-            <div className="px-4 pt-2">
-              <Link href="/contact">
-              <Button className="w-full bg-emerald-600 hover:bg-emerald-700 text-white">
-              Contact Us
-              </Button>
-            </Link>
-            </div>
-          </motion.div>
-        )}
-      </div>
-    </motion.nav>
-  )
-}
+export default Navbar;
