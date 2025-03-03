@@ -26,7 +26,7 @@ export default function RootLayout({
           <main>
             <div className='flex flex-col items-center justify-center h-screen'>
               <h1 className='text-xl'>Website under construction</h1>
-              <h3 className='text-xl'>Please check back later...</h3>
+              <h3 className='text-xl'>😊 Please check back later...</h3>
             </div>
           </main>
           {/* <Footer /> */}
