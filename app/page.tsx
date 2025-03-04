@@ -8,7 +8,7 @@ import { ChevronRight, Play, Volume2 } from "lucide-react";
 export default function Home() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Sections */}
       <section className="relative h-[80vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <video 
