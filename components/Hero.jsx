@@ -28,7 +28,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative h-[90vh] py-20 flex items-center">
+    <div className="relative h-[75vh] py-20 flex items-center">
       {/* Background Video */}
       <div className="absolute inset-0 z-0">
         <video

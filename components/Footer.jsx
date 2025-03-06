@@ -7,7 +7,7 @@ import Logo from "@/public/logo.png";
 
 // Data for reusable sections
 const contactDetails = [
-  { icon: <Phone size={16} />, text: "+234 XXX XXX XXXX" },
+  { icon: <Phone size={16} />, text: "+234 7011 404 040" },
   { icon: <Mail size={16} />, text: "kudanlg@gmail.com" },
   { icon: <MapPin size={16} />, text: "Secretariat, Zaria Road, Hunkuyi" },
 ];

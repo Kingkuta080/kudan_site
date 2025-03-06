@@ -33,7 +33,7 @@ const Navbar = () => {
               alt="Kudan Logo"
               width={80}
               height={80}
-              className="rounded-full w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 hover:opacity-90 transition-opacity"
+              className="rounded-full w-12 h-12 sm:w-16 sm:h-16 md:w-16 md:h-16 hover:opacity-90 transition-opacity"
               priority
             />
           </Link>
