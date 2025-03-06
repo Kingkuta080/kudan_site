@@ -114,7 +114,7 @@ export default function AboutPage() {
                   
                   <div className="prose prose-green max-w-none text-gray-700">
                     <p className="mb-4">
-                      Kudan Local Government Area was established in 1996 in Kaduna State. The name &quot;Kudan&quot; is derived from Kudandariya, a founding figure whose legacy spans over 600 years.
+                      Kudan Local Government Area was established in 1996 in Kaduna State. The name "Kudan" is derived from Kudandariya, a founding figure whose legacy spans over 600 years.
                     </p>
                     
                     <p className="mb-4">
@@ -363,7 +363,7 @@ export default function AboutPage() {
           
           <div className="mt-12 bg-green-50 p-6 rounded-lg shadow-md">
             <p className="text-gray-700 text-center">
-              These traditional structures help maintain a balance between age-old customs and contemporary administrative practices, ensuring that Kudan&apos;s heritage remains vibrant and respected.
+              These traditional structures help maintain a balance between age-old customs and contemporary administrative practices, ensuring that Kudan's heritage remains vibrant and respected.
             </p>
           </div>
         </div>
