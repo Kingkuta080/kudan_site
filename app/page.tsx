@@ -1,4 +1,4 @@
-import Hero from "@/components/hero";
+import Hero from "@/components/Hero";
 import AboutKudan from "@/components/AboutKudan"
 import Chairman from "@/components/Chairman";
 import Agri from "@/components/Agri";
