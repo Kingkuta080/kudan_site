@@ -32,7 +32,7 @@ export default function ProjectsPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-gray-700 text-lg">
-              At Kudan Local Government, we believe in transparency and community engagement. Our projects are designed to improve local infrastructure and community services. We're committed to working closely with our citizens to ensure that every initiative meets the needs of our community.
+              At Kudan Local Government, we believe in transparency and community engagement. This page is dedicated to providing you with detailed updates on our ongoing projects that are designed to improve local infrastructure and community services. We’re committed to working closely with our citizens to ensure that every initiative meets the needs of our community.
             </p>
           </div>
         </div>
@@ -54,7 +54,9 @@ export default function ProjectsPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6 text-white">
                 <h3 className="text-xl font-semibold mb-2">Borehole Constructions</h3>
-                <p className="text-sm mb-4">Providing clean water access across communities</p>
+                <p className="text-sm mb-4">
+                  Water scarcity directly affects our local farming community. In response, we have launched the Borehole Constructions Project, an initiative focused on constructing strategically located boreholes across key agricultural zones.
+                </p>
                 <Button variant="ghost" size="sm" className="text-white self-start hover:bg-white/20">
                   <Play className="mr-2 h-4 w-4" /> Watch Progress
                 </Button>
@@ -70,8 +72,10 @@ export default function ProjectsPage() {
                 className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6 text-white">
-                <h3 className="text-xl font-semibold mb-2">Healthcare Center Renovations</h3>
-                <p className="text-sm mb-4">Improving healthcare facilities for better service delivery</p>
+                <h3 className="text-xl font-semibold mb-2">Renovation of Primary Healthcare Centers</h3>
+                <p className="text-sm mb-4">
+                  Access to quality healthcare is essential for our community’s well-being. We are focusing on rehabilitation by updating essential systems, reinforcing structural integrity, and modernizing interiors.
+                </p>
                 <Button variant="ghost" size="sm" className="text-white self-start hover:bg-white/20">
                   <Play className="mr-2 h-4 w-4" /> Watch Progress
                 </Button>
@@ -87,8 +91,10 @@ export default function ProjectsPage() {
                 className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6 text-white">
-                <h3 className="text-xl font-semibold mb-2">Road Infrastructure</h3>
-                <p className="text-sm mb-4">Connecting communities through improved road networks</p>
+                <h3 className="text-xl font-semibold mb-2">Water Sanitation and Hygiene (WASH)</h3>
+                <p className="text-sm mb-4">
+                  The WASH program focuses on upgrading water supply systems, constructing sanitation facilities, promoting hygiene education, and implementing WASHPro for sustainable water management.
+                </p>
                 <Button variant="ghost" size="sm" className="text-white self-start hover:bg-white/20">
                   <Play className="mr-2 h-4 w-4" /> Watch Progress
                 </Button>
@@ -130,7 +136,7 @@ export default function ProjectsPage() {
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-green-800">Enterprise Development Program</CardTitle>
+                <CardTitle className="text-green-800">Kudan Enterprise Development Program (KEDEP)</CardTitle>
               </CardHeader>
               <CardContent>
                 <Image 

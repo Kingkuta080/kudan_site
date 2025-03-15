@@ -31,7 +31,7 @@ export default function AgriculturePage() {
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-bold text-green-800 mb-4">Agricultural Excellence</h2>
             <p className="text-gray-700">
-              Kudan Local Government is a major agricultural hub in Kaduna State, blessed with fertile land, irrigation systems and a favorable climate that supports both wet and dry season farming. The area's farming activities range from staple food production to cash crops and livestock rearing, making it a key contributor to food security and economic development in the State and beyond.
+              Kudan Local Government is a major agricultural hub in Kaduna State, blessed with fertile land, irrigation systems, and a favorable climate that supports both wet and dry season farming. The area's farming activities range from staple food production to cash crops and livestock rearing, making it a key contributor to food security and economic development in the State and beyond. Kudan benefits from three major dams which facilitate year-round irrigation farming.
             </p>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function AgriculturePage() {
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
                 <p className="text-gray-700">
-                  Kudan accounts for approximately 85% of Nigeria's grape production, with over 80 vineyards yielding high-quality grapes for both local consumption and export.
+                  Kudan is gaining recognition for its expanding grape farms, particularly in the Hunkuyi and Sabon Gari wards. We proudly account for approximately 85% of Nigeria's grape production, with over 80 vineyards yielding high-quality grapes that offer great potential for both local consumption and export, owing to our fertile soil, favorable climate, and the dedication of our local farmers.
                 </p>
               </CardContent>
             </Card>
@@ -117,7 +117,7 @@ export default function AgriculturePage() {
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
                 <p className="text-gray-700">
-                  Kudan is widely recognized as a major center for potato production, notably of Irish potatoes, owing to its rich, fertile soils and ideal climatic conditions.
+                  Kudan is widely recognized as a major center for potato production, notably of Irish potatoes, owing to its rich, fertile soils and ideal climatic conditions that consistently yield high-quality crops. This longstanding reputation reinforces our pivotal role in Nigeria's agricultural sector.
                 </p>
               </CardContent>
             </Card>
@@ -135,7 +135,7 @@ export default function AgriculturePage() {
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
                 <p className="text-gray-700">
-                  Advanced irrigation systems enable year-round cultivation, ensuring a steady supply of high-quality tomatoes to markets across Kaduna State and beyond.
+                  Tomato farming is a cornerstone of Kudan’s agriculture, with advanced irrigation systems enabling year-round cultivation and ensuring a steady supply of high-quality tomatoes to markets across Kaduna State and beyond. Additionally, Kudan is home to a tomato paste factory, with further potential for investment in agro-processing, such as dried tomato production.
                 </p>
               </CardContent>
             </Card>
@@ -153,7 +153,7 @@ export default function AgriculturePage() {
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
                 <p className="text-gray-700">
-                  Kudan LGA is a leading producer of cabbage and carrots, with farmers producing high volumes for both local markets and distribution across various states.
+                  Kudan LGA is well-known as one of the leading large-scale producers of cabbage and carrots, with farmers producing high volumes for both local markets and distribution across various states. These vegetables are key sources of income for small and large-scale farmers alike.
                 </p>
               </CardContent>
             </Card>
@@ -171,7 +171,7 @@ export default function AgriculturePage() {
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
                 <p className="text-gray-700">
-                  Sugarcane farming is a major agricultural activity in Kauran Wali and Likoro wards, with potential for establishing sugar processing plants.
+                  Sugarcane farming is a major agricultural activity in Kauran Wali and Likoro wards. The region's climate and soil conditions support large-scale sugarcane production, which is processed into products like jaggery and syrup. The potential for establishing sugar processing plants in Kudan presents a significant economic opportunity.
                 </p>
               </CardContent>
             </Card>
@@ -214,7 +214,7 @@ export default function AgriculturePage() {
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
                 <p className="text-gray-700">
-                  Kudan is home to various agro-processing activities, including the production of kuli-kuli (groundnut cake), rice milling, local dairy products, and processed grains.
+                  In addition to raw agricultural production, Kudan is home to various agro-processing activities, including the production of kuli-kuli (groundnut cake), rice milling, local dairy products, and processed grains.
                 </p>
               </CardContent>
             </Card>

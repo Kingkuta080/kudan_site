@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 export default function NewsPage() {
@@ -32,12 +32,12 @@ export default function NewsPage() {
           <h2 className="text-3xl font-bold text-green-800 mb-12 text-center">Latest News</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <CardHeader>
                 <CardTitle className="text-green-800">Establishment of KADCO</CardTitle>
                 <CardDescription>June 15, 2025</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <Image 
                   src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="KADCO Establishment"
@@ -48,18 +48,20 @@ export default function NewsPage() {
                 <p className="text-gray-700 mb-4">
                   Kudan Agricultural Development Company (KADCO) has been established to support local farmers with modern farming techniques and access to markets.
                 </p>
-                <Button variant="outline" className="text-green-700 border-green-700 hover:bg-green-700 hover:text-white">
+              </CardContent>
+              <CardFooter>
+                <Button variant="outline" className="w-full text-green-700 border-green-700 hover:bg-green-700 hover:text-white">
                   Read More
                 </Button>
-              </CardContent>
+              </CardFooter>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <CardHeader>
                 <CardTitle className="text-green-800">New Bye Laws Established</CardTitle>
                 <CardDescription>May 28, 2025</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <Image 
                   src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="New Bye Laws"
@@ -70,18 +72,20 @@ export default function NewsPage() {
                 <p className="text-gray-700 mb-4">
                   The local government has established new bye laws to improve governance and community development in all 10 electoral wards.
                 </p>
-                <Button variant="outline" className="text-green-700 border-green-700 hover:bg-green-700 hover:text-white">
+              </CardContent>
+              <CardFooter>
+                <Button variant="outline" className="w-full text-green-700 border-green-700 hover:bg-green-700 hover:text-white">
                   Read More
                 </Button>
-              </CardContent>
+              </CardFooter>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <CardHeader>
                 <CardTitle className="text-green-800">Launch of WASHPro System</CardTitle>
                 <CardDescription>May 15, 2025</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <Image 
                   src="https://images.unsplash.com/photo-1584824388878-91b5ad632e31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="WASHPro Launch"
@@ -92,11 +96,20 @@ export default function NewsPage() {
                 <p className="text-gray-700 mb-4">
                   Chairman Dauda Ilya Abba launches WASHPro, an innovative system to support water, sanitation, and hygiene initiatives.
                 </p>
-                <Button variant="outline" className="text-green-700 border-green-700 hover:bg-green-700 hover:text-white">
+              </CardContent>
+              <CardFooter>
+                <Button variant="outline" className="w-full text-green-700 border-green-700 hover:bg-green-700 hover:text-white">
                   Read More
                 </Button>
-              </CardContent>
+              </CardFooter>
             </Card>
+          </div>
+
+          {/* View More News Button */}
+          <div className="flex justify-center mt-12">
+            <Button variant="outline" className="text-green-700 border-green-700 hover:bg-green-700 hover:text-white">
+              View More News
+            </Button>
           </div>
         </div>
       </section>
@@ -107,12 +120,12 @@ export default function NewsPage() {
           <h2 className="text-3xl font-bold text-green-800 mb-12 text-center">Upcoming Events</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <CardHeader>
                 <CardTitle className="text-green-800">Women Empowerment Program</CardTitle>
                 <CardDescription>July 10-12, 2025</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <Image 
                   src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="Women Empowerment Program"
@@ -127,18 +140,20 @@ export default function NewsPage() {
                   <p className="text-gray-700"><strong>Location:</strong> Kudan Community Center</p>
                   <p className="text-gray-700"><strong>Time:</strong> 9:00 AM - 4:00 PM</p>
                 </div>
-                <Button className="mt-4 bg-green-600 hover:bg-green-700">
+              </CardContent>
+              <CardFooter>
+                <Button variant="outline" className="w-full text-green-700 border-green-700 hover:bg-green-700 hover:text-white">
                   Register Now
                 </Button>
-              </CardContent>
+              </CardFooter>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
               <CardHeader>
                 <CardTitle className="text-green-800">Annual Farmers' Exhibition</CardTitle>
                 <CardDescription>August 5-7, 2025</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <Image 
                   src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="Farmers' Exhibition"
@@ -153,11 +168,20 @@ export default function NewsPage() {
                   <p className="text-gray-700"><strong>Location:</strong> Kudan Agricultural Complex</p>
                   <p className="text-gray-700"><strong>Time:</strong> 8:00 AM - 6:00 PM</p>
                 </div>
-                <Button className="mt-4 bg-green-600 hover:bg-green-700">
+              </CardContent>
+              <CardFooter>
+                <Button variant="outline" className="w-full text-green-700 border-green-700 hover:bg-green-700 hover:text-white">
                   Learn More
                 </Button>
-              </CardContent>
+              </CardFooter>
             </Card>
+          </div>
+
+          {/* View More Events Button */}
+          <div className="flex justify-center mt-12">
+            <Button variant="outline" className="text-green-700 border-green-700 hover:bg-green-700 hover:text-white">
+              View More Events
+            </Button>
           </div>
         </div>
       </section>

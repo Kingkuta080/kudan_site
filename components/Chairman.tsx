@@ -73,7 +73,7 @@ export default function Chairman() {
             <Image
               src={chairman}
               alt="Hon. Dauda Ilya Abba - Chairman"
-              width={400}
+              width={350}
               height={200}
               className="rounded-lg shadow-lg mx-auto hover:shadow-2xl transition-shadow duration-300"
             />
@@ -88,14 +88,16 @@ export default function Chairman() {
               Hon. Dauda Ilya Abba
             </h3>
             <p className="text-gray-700 mb-4">
-              Welcome to the official website of Kudan Local Government Area. It
-              is with great pleasure that I address you as the Chairman of this
-              vibrant and progressive community.
+            I warmly welcome you to explore our community’s rich heritage and promising future.
+            This website is your window into our agricultural achievements, community projects, and cultural heritage.
+            Our administration is committed to transparent governance,
+            sustainable development, and improving the quality of life for all residents of Kudan.
             </p>
             <p className="text-gray-700 mb-4">
-              Our administration is committed to transparent governance,
-              sustainable development, and improving the quality of life for all
-              residents of Kudan.
+            While we provide informative content about our ongoing projects and initiatives, we invite you to contact us for any further details or collaborative opportunities. 
+            </p>
+            <p className="text-gray-700 mb-4">
+            Thank you for visiting, and I look forward to sharing the remarkable journey of Kudan with you.
             </p>
             {/* <div className="mt-6 flex items-center">
               <Button

@@ -52,7 +52,7 @@ export default function Agri() {
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
                 <p className="text-gray-700">
-                  Kudan&apos;s farmers are celebrated for producing high-quality potatoes that are distributed throughout Nigeria.
+                  Kudan&apos;s farmers are celebrated for producing high-quality potatoes that are distributed across the Country.
                 </p>
               </CardContent>
             </Card>
@@ -74,7 +74,7 @@ export default function Agri() {
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
                 <p className="text-gray-700">
-                  Our grape farms have gained widespread recognition for their quality and innovative farming techniques.
+                We proudly account for approximately 85% of Nigeria&apos;s grape production, with over 80 vineyards yielding high-quality grapes.
                 </p>
               </CardContent>
             </Card>

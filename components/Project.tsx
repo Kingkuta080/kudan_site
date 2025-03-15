@@ -57,17 +57,17 @@ export default function Project() {
 const projects = [
   {
     title: "Borehole Constructions",
-    description: "Providing clean water access across communities",
+    description: "Borehole Construction to Mitigate Water Shortages for Local Farmers",
     image: "https://images.unsplash.com/photo-1584824388878-91b5ad632e31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "Healthcare Center Renovations",
-    description: "Improving healthcare facilities for better service delivery",
+    description: "Rehabilitation of primary healthcare Centers for better service delivery",
     image: "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
   },
   {
-    title: "Road Infrastructure",
-    description: "Connecting communities through improved road networks",
+    title: "WASH Program",
+    description: "Improving community health by ensuring access to Water, Sanitation, and Proper Hygiene Practices",
     image: "https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
   },
 ];

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation"; // Import usePathname
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/public";
@@ -9,6 +10,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname(); // Get the current path
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -45,7 +47,11 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="px-3 py-2 text-sm lg:text-base font-semibold text-white relative hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-[2px] hover:after:bg-white hover:after:transition-all hover:after:duration-300"
+                  className={`px-3 py-2 text-sm lg:text-base font-semibold text-white relative hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-[2px] hover:after:bg-white hover:after:transition-all hover:after:duration-300 ${
+                    pathname === link.href
+                      ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white"
+                      : ""
+                  }`}
                 >
                   {link.name}
                 </Link>
@@ -85,7 +91,11 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="block px-4 py-3 text-base font-semibold text-white relative hover:after:absolute hover:after:bottom-2 hover:after:left-4 hover:after:w-[calc(100%-2rem)] hover:after:h-[2px] hover:after:bg-white hover:after:transition-all hover:after:duration-300"
+                  className={`block px-4 py-3 text-base font-semibold text-white relative hover:after:absolute hover:after:bottom-2 hover:after:left-4 hover:after:w-[calc(100%-2rem)] hover:after:h-[2px] hover:after:bg-white hover:after:transition-all hover:after:duration-300 ${
+                    pathname === link.href
+                      ? "after:absolute after:bottom-2 after:left-4 after:w-[calc(100%-2rem)] after:h-[2px] after:bg-white"
+                      : ""
+                  }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}

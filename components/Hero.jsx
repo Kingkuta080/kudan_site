@@ -65,10 +65,10 @@ export default function Hero() {
 
           {/* Subtitle */}
           <motion.p
-            className="text-xl mb-8"
+            className="text-md mb-8"
             variants={itemVariants}
           >
-            Farming is our Pride, Progress is our Goal
+          Farming is our source of pride. Our vibrant community is enriched by a deep agricultural heritage and a diverse cultural identity.
           </motion.p>
 
           {/* Buttons */}
