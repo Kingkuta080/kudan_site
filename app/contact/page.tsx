@@ -18,14 +18,35 @@ export default function ContactPage() {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+    // Clear errors when user types
+    if (errors[name]) {
+      setErrors((prev) => ({ ...prev, [name]: "" }));
+    }
+  };
+
+  const validateForm = () => {
+    const newErrors: { [key: string]: string } = {};
+    if (!formData.name) newErrors.name = "Name is required";
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Invalid email address";
+    }
+    if (!formData.subject) newErrors.subject = "Subject is required";
+    if (!formData.message) newErrors.message = "Message is required";
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!validateForm()) return;
+
     setIsSubmitting(true);
     
     // Simulate form submission
@@ -145,6 +166,7 @@ export default function ContactPage() {
                           onChange={handleChange}
                           required 
                         />
+                        {errors.name && <p className="text-sm text-red-600">{errors.name}</p>}
                       </div>
                       
                       <div className="grid gap-2">
@@ -158,6 +180,7 @@ export default function ContactPage() {
                           onChange={handleChange}
                           required 
                         />
+                        {errors.email && <p className="text-sm text-red-600">{errors.email}</p>}
                       </div>
                       
                       <div className="grid gap-2">
@@ -170,6 +193,7 @@ export default function ContactPage() {
                           onChange={handleChange}
                           required 
                         />
+                        {errors.subject && <p className="text-sm text-red-600">{errors.subject}</p>}
                       </div>
                       
                       <div className="grid gap-2">
@@ -183,6 +207,7 @@ export default function ContactPage() {
                           onChange={handleChange}
                           required 
                         />
+                        {errors.message && <p className="text-sm text-red-600">{errors.message}</p>}
                       </div>
                       
                       <Button 
@@ -216,15 +241,16 @@ export default function ContactPage() {
               <Card>
                 <CardContent className="p-0 overflow-hidden rounded-lg">
                   <div className="aspect-video w-full">
-                    <iframe 
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252523.60141334266!2d7.5!3d11.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11b2c1e3a7c7eb05%3A0x3e0c0c1e7c1a1d0!2sKaduna%20State%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1625000000000!5m2!1sen!2sus" 
-                      width="100%" 
-                      height="100%" 
-                      style={{ border: 0 }} 
-                      allowFullScreen 
-                      loading="lazy" 
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130412.4717321086!2d7.786765501681929!3d11.262539404798725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11b27fc3df7cf997%3A0x7f813ac2a29bec28!2sKudan%2C%20Kaduna%2C%20Nigeria!5e1!3m2!1sen!2sus!4v1741206962840!5m2!1sen!2sus"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
                       className="w-full h-full"
+                      aria-label="Map of Kudan Local Government Secretariat"
                     ></iframe>
                   </div>
                 </CardContent>
