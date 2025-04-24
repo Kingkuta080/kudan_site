@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { motion } from 'framer-motion'; // Framer Motion is a client-side library
+import { Bg } from "@/public/index";
 
 export default function Agri() {
   // Animation variants for cards
@@ -45,7 +46,7 @@ export default function Agri() {
               </CardHeader>
               <CardContent className="flex-1">
                 <Image
-                  src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src={Bg}
                   alt="Potatoes"
                   width={300}
                   height={200}

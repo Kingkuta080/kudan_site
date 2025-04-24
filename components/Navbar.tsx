@@ -21,7 +21,7 @@ const Navbar = () => {
     { name: "Government", href: "/government" },
     { name: "Projects", href: "/projects" },
     { name: "Agriculture", href: "/agriculture" },
-    { name: "News & Events", href: "/news" },
+    { name: "News", href: "/news" },
   ];
 
   return (

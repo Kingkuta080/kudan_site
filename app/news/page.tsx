@@ -1,8 +1,34 @@
-import Image from "next/image";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+"use client";
 
-export default function NewsPage() {
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation"; // Import usePathname
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
+import { motion } from "framer-motion";
+import { NewsData, newsData } from '@/store/data';
+import { IconLeft } from "react-day-picker";
+import { ArrowLeft, Home } from "lucide-react";
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.2, delayChildren: 0.3 },
+  },
+};
+
+const itemVariants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { type: "spring", stiffness: 100, damping: 20 },
+  },
+};
+
+export default function News() {
+  const pathname = usePathname(); // Get the current path
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -32,156 +58,40 @@ export default function NewsPage() {
           <h2 className="text-3xl font-bold text-green-800 mb-12 text-center">Latest News</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-green-800">Establishment of KADCO</CardTitle>
-                <CardDescription>June 15, 2025</CardDescription>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <Image 
-                  src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                  alt="KADCO Establishment"
-                  width={400}
-                  height={300}
-                  className="w-full h-48 object-cover rounded-md mb-4"
-                />
-                <p className="text-gray-700 mb-4">
-                  Kudan Agricultural Development Company (KADCO) has been established to support local farmers with modern farming techniques and access to markets.
-                </p>
-              </CardContent>
-              <CardFooter>
-                <Button variant="outline" className="w-full text-green-700 border-green-700 hover:bg-green-700 hover:text-white">
-                  Read More
-                </Button>
-              </CardFooter>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-green-800">New Bye Laws Established</CardTitle>
-                <CardDescription>May 28, 2025</CardDescription>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <Image 
-                  src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                  alt="New Bye Laws"
-                  width={400}
-                  height={300}
-                  className="w-full h-48 object-cover rounded-md mb-4"
-                />
-                <p className="text-gray-700 mb-4">
-                  The local government has established new bye laws to improve governance and community development in all 10 electoral wards.
-                </p>
-              </CardContent>
-              <CardFooter>
-                <Button variant="outline" className="w-full text-green-700 border-green-700 hover:bg-green-700 hover:text-white">
-                  Read More
-                </Button>
-              </CardFooter>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-green-800">Launch of WASHPro System</CardTitle>
-                <CardDescription>May 15, 2025</CardDescription>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <Image 
-                  src="https://images.unsplash.com/photo-1584824388878-91b5ad632e31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                  alt="WASHPro Launch"
-                  width={400}
-                  height={300}
-                  className="w-full h-48 object-cover rounded-md mb-4"
-                />
-                <p className="text-gray-700 mb-4">
-                  Chairman Dauda Ilya Abba launches WASHPro, an innovative system to support water, sanitation, and hygiene initiatives.
-                </p>
-              </CardContent>
-              <CardFooter>
-                <Button variant="outline" className="w-full text-green-700 border-green-700 hover:bg-green-700 hover:text-white">
-                  Read More
-                </Button>
-              </CardFooter>
-            </Card>
+            {newsData.map((news: NewsData, index: number) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow h-full flex flex-col">
+                <CardHeader>
+                  <CardTitle className="text-green-800">{news.title}</CardTitle>
+                  <CardDescription>{news.date}</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <Image 
+                    src={news.images[0]} 
+                    alt={news.title}
+                    width={400}
+                    height={300}
+                    className="w-full h-48 object-cover rounded-md mb-4"
+                  />
+                  <p className="text-gray-700 mb-4">{news.description}</p>
+                </CardContent>
+                <CardFooter>
+                  <Button variant="outline" className="w-full text-green-700 border-green-700 hover:bg-green-700 hover:text-white" asChild>
+                    <Link href={`/news/${news.slug}`}>
+                      Read More
+                    </Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+            ))}
           </div>
 
           {/* View More News Button */}
           <div className="flex justify-center mt-12">
-            <Button variant="outline" className="text-green-700 border-green-700 hover:bg-green-700 hover:text-white">
-              View More News
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Upcoming Events Section */}
-      <section className="py-16 bg-green-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-green-800 mb-12 text-center">Upcoming Events</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-green-800">Women Empowerment Program</CardTitle>
-                <CardDescription>July 10-12, 2025</CardDescription>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <Image 
-                  src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                  alt="Women Empowerment Program"
-                  width={400}
-                  height={300}
-                  className="w-full h-48 object-cover rounded-md mb-4"
-                />
-                <p className="text-gray-700 mb-4">
-                  A three-day workshop focused on empowering women through agricultural skills, financial literacy, and entrepreneurship.
-                </p>
-                <div className="space-y-2">
-                  <p className="text-gray-700"><strong>Location:</strong> Kudan Community Center</p>
-                  <p className="text-gray-700"><strong>Time:</strong> 9:00 AM - 4:00 PM</p>
-                </div>
-              </CardContent>
-              <CardFooter>
-                <Button variant="outline" className="w-full text-green-700 border-green-700 hover:bg-green-700 hover:text-white">
-                  Register Now
-                </Button>
-              </CardFooter>
-            </Card>
-
-            <Card className="hover:shadow-lg transition-shadow h-full flex flex-col">
-              <CardHeader>
-                <CardTitle className="text-green-800">Annual Farmers' Exhibition</CardTitle>
-                <CardDescription>August 5-7, 2025</CardDescription>
-              </CardHeader>
-              <CardContent className="flex-grow">
-                <Image 
-                  src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                  alt="Farmers' Exhibition"
-                  width={400}
-                  height={300}
-                  className="w-full h-48 object-cover rounded-md mb-4"
-                />
-                <p className="text-gray-700 mb-4">
-                  Join us for the annual exhibition showcasing agricultural innovations, local produce, and networking opportunities for farmers.
-                </p>
-                <div className="space-y-2">
-                  <p className="text-gray-700"><strong>Location:</strong> Kudan Agricultural Complex</p>
-                  <p className="text-gray-700"><strong>Time:</strong> 8:00 AM - 6:00 PM</p>
-                </div>
-              </CardContent>
-              <CardFooter>
-                <Button variant="outline" className="w-full text-green-700 border-green-700 hover:bg-green-700 hover:text-white">
-                  Learn More
-                </Button>
-              </CardFooter>
-            </Card>
-          </div>
-
-          {/* View More Events Button */}
-          <div className="flex justify-center mt-12">
-            <Button variant="outline" className="text-green-700 border-green-700 hover:bg-green-700 hover:text-white">
-              View More Events
-            </Button>
+            <Link href="/">
+              <button className="px-6 py-3 bg-green-700 text-white rounded-lg hover:bg-green-800 transition flex items-center gap-2">
+                 <ArrowLeft /> Home
+              </button>
+            </Link>
           </div>
         </div>
       </section>
