@@ -4,6 +4,7 @@ import Chairman from "@/components/Chairman";
 import Agri from "@/components/Agri";
 import News from "@/components/News";
 import Project from "@/components/Project";
+import Gallery from "@/components/Gallary";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Agri />
       <News />
       <Project />
+      <Gallery />
     </div>
   );
 }

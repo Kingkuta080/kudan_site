@@ -46,7 +46,7 @@ export default function ProjectsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="relative group overflow-hidden rounded-lg shadow-lg">
               <Image 
-                src="https://images.unsplash.com/photo-1584824388878-91b5ad632e31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                src={"/projects/1.jpg"} 
                 alt="Borehole Construction"
                 width={400}
                 height={300}
@@ -65,7 +65,7 @@ export default function ProjectsPage() {
 
             <div className="relative group overflow-hidden rounded-lg shadow-lg">
               <Image 
-                src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                src="" 
                 alt="Healthcare Center Renovation"
                 width={400}
                 height={300}
@@ -84,7 +84,7 @@ export default function ProjectsPage() {
 
             <div className="relative group overflow-hidden rounded-lg shadow-lg">
               <Image 
-                src="https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                src={"/projects/3.jpg"} 
                 alt="Road Construction"
                 width={400}
                 height={300}
@@ -116,7 +116,7 @@ export default function ProjectsPage() {
               </CardHeader>
               <CardContent>
                 <Image 
-                  src="https://images.unsplash.com/photo-1584824388878-91b5ad632e31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src="/news/3.jpeg" 
                   alt="WASH Program"
                   width={400}
                   height={300}
@@ -140,7 +140,7 @@ export default function ProjectsPage() {
               </CardHeader>
               <CardContent>
                 <Image 
-                  src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src="" 
                   alt="Enterprise Development"
                   width={400}
                   height={300}
@@ -199,7 +199,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Environmental & Sustainability */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-green-800 mb-12 text-center">Environmental & Sustainability Initiatives</h2>
           
@@ -210,7 +210,7 @@ export default function ProjectsPage() {
               </CardHeader>
               <CardContent>
                 <Image 
-                  src="https://images.unsplash.com/photo-1552525892-893d56d0a393?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src="" 
                   alt="Green Spaces"
                   width={400}
                   height={300}
@@ -259,7 +259,7 @@ export default function ProjectsPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

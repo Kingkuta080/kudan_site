@@ -46,7 +46,7 @@ export default function Agri() {
               </CardHeader>
               <CardContent className="flex-1">
                 <Image
-                  src={Bg}
+                  src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="Potatoes"
                   width={300}
                   height={200}

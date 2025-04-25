@@ -32,12 +32,14 @@ export default function News() {
           >
             News - Stay in Touch with Us
           </motion.h2>
+
           <motion.div
             initial={{ opacity: 0, scaleX: 0 }}
             whileInView={{ opacity: 1, scaleX: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="w-24 h-1 bg-green-600 mx-auto"
           ></motion.div>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-16">
           {newsData.slice(0, 3).map((news) => (
             <Card key={news.slug} className="hover:shadow-lg transition-shadow h-full flex flex-col">
@@ -75,6 +77,5 @@ export default function News() {
           </div>
         </div>
       </div>
-    </div>
   );
 }

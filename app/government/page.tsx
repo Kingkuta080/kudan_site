@@ -14,7 +14,7 @@ export default function GovernmentPage() {
       <section className="relative h-[40vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1575517111839-3a3843ee7f5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+            src={"/gov.png"}
             alt="Kudan Government"
             fill
             className="object-cover"

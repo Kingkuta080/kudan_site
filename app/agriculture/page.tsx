@@ -8,7 +8,7 @@ export default function AgriculturePage() {
       <section className="relative h-[40vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+            src="/bg2.png"
             alt="Agriculture in Kudan"
             fill
             className="object-cover"
@@ -189,7 +189,7 @@ export default function AgriculturePage() {
               </CardHeader>
               <CardContent>
                 <Image 
-                  src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src="/bg3.jpeg"
                   alt="Livestock"
                   width={400}
                   height={300}
@@ -207,7 +207,7 @@ export default function AgriculturePage() {
               </CardHeader>
               <CardContent>
                 <Image 
-                  src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src="/agro.png" 
                   alt="Agro-Processing"
                   width={400}
                   height={300}

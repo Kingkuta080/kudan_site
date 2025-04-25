@@ -353,7 +353,7 @@ export default function AboutPage() {
 
             <div>
               <Image
-                src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="/gov.png"
                 alt="Kudan Landscape"
                 width={600}
                 height={400}

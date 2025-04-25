@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation"; // Import usePathname
+import { useRouter } from "next/navigation"; // Import useRouter
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { NewsData, newsData } from '@/store/data';
-import { IconLeft } from "react-day-picker";
-import { ArrowLeft, Home } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
+
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -27,7 +27,7 @@ const itemVariants = {
 };
 
 export default function News() {
-  const pathname = usePathname(); // Get the current path
+  const router = useRouter(); // Use useRouter hook
 
   return (
     <div className="min-h-screen">
@@ -87,11 +87,12 @@ export default function News() {
 
           {/* View More News Button */}
           <div className="flex justify-center mt-12">
-            <Link href="/">
-              <button className="px-6 py-3 bg-green-700 text-white rounded-lg hover:bg-green-800 transition flex items-center gap-2">
-                 <ArrowLeft /> Home
+              <button 
+              className="px-6 py-3 bg-green-700 text-white rounded-lg hover:bg-green-800 transition flex items-center gap-2"
+              onClick={() => router.back()}
+              >
+                 <ArrowLeft /> Back
               </button>
-            </Link>
           </div>
         </div>
       </section>
