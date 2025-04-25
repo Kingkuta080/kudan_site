@@ -47,8 +47,13 @@ export default function Gallery() {
     const newIndex = direction === 'next' 
       ? (currentIndex + 1) % galleryData.length
       : (currentIndex - 1 + galleryData.length) % galleryData.length;
-    
-    setSelectedImage(galleryData[newIndex]);
+
+    const newSelectedImage = {
+      ...galleryData[newIndex],
+      title: `Title ${newIndex + 1}` // Assuming a title format
+    };
+
+    setSelectedImage(newSelectedImage);
     setCurrentIndex(newIndex);
   };
 
@@ -83,11 +88,11 @@ export default function Gallery() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
               className="group relative overflow-hidden rounded-lg cursor-pointer"
-              onClick={() => handleImageOpen(item, index)}
+              onClick={() => handleImageOpen({ ...item, title: `Title ${index + 1}` }, index)}
             >
               <Image
                 src={item.image}
-                alt={item.image}
+                alt={`Image ${index + 1}`}
                 width={400}
                 height={300}
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"

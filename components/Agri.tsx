@@ -3,9 +3,9 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
+  // Start of Selection
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { motion } from 'framer-motion'; // Framer Motion is a client-side library
-import { Bg } from "@/public/index";
 
 export default function Agri() {
   // Animation variants for cards
