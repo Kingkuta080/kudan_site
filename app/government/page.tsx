@@ -123,7 +123,7 @@ export default function GovernmentPage() {
                     <div className="flex flex-col items-center">
                       <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
                         <Image
-                          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                          src={"/chairman.jpg"}
                           alt="Hon. Dauda Ilya Abba"
                           width={128}
                           height={128}
@@ -141,7 +141,7 @@ export default function GovernmentPage() {
                     <div className="flex flex-col items-center">
                       <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
                         <Image
-                          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80"
+                          src={"/vice.jpg"}
                           alt="Usman Abbas Likoro"
                           width={128}
                           height={128}

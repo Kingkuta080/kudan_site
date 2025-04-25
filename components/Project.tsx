@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Play } from "lucide-react";
 import { motion } from "framer-motion";
+import { projects } from "@/store/data";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -23,7 +24,7 @@ export default function Project() {
 
         {/* Projects Grid */}
         <motion.div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" initial="hidden" whileInView="visible" variants={cardVariants}>
-          {projects.map((project, index) => (
+          {projects.map((project: any, index: number) => (
             <motion.div key={index} className="relative group overflow-hidden rounded-lg shadow-lg" variants={cardVariants}>
               <Image 
                 src={project.image} 
@@ -53,21 +54,3 @@ export default function Project() {
     </section>
   );
 }
-
-const projects = [
-  {
-    title: "Borehole Constructions",
-    description: "Borehole Construction to Mitigate Water Shortages for Local Farmers",
-    image: "https://images.unsplash.com/photo-1584824388878-91b5ad632e31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    title: "Healthcare Center Renovations",
-    description: "Rehabilitation of primary healthcare Centers for better service delivery",
-    image: "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    title: "WASH Program",
-    description: "Improving community health by ensuring access to Water, Sanitation, and Proper Hygiene Practices",
-    image: "https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-  },
-];

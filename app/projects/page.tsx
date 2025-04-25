@@ -10,7 +10,7 @@ export default function ProjectsPage() {
       <section className="relative h-[40vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+            src={"/projects/4.jpg"}
             alt="Kudan Projects"
             fill
             className="object-cover"
