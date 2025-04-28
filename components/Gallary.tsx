@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 
@@ -97,7 +97,8 @@ export default function Gallery() {
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <p className="text-white text-lg font-medium">{item.title}</p>
+                {/* <p className="text-white text-lg font-medium">{item.title}</p> */}
+                <ZoomIn color="white" size={32}/>
               </div>
             </motion.div>
           ))}
