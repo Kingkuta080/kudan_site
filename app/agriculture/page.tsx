@@ -189,7 +189,7 @@ export default function AgriculturePage() {
               </CardHeader>
               <CardContent>
                 <Image 
-                  src="/bg3.jpeg"
+                  src="/Agric/bg3.jpeg"
                   alt="Livestock"
                   width={400}
                   height={300}
@@ -207,7 +207,7 @@ export default function AgriculturePage() {
               </CardHeader>
               <CardContent>
                 <Image 
-                  src="/agro.png" 
+                  src="/Agric/agro.png" 
                   alt="Agro-Processing"
                   width={400}
                   height={300}

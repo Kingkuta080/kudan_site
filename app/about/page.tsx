@@ -353,7 +353,7 @@ export default function AboutPage() {
 
             <div>
               <Image
-                src="/gov.png"
+                src="/AboutKudan/GeoEconomy/gov.png"
                 alt="Kudan Landscape"
                 width={600}
                 height={400}

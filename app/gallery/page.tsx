@@ -22,7 +22,7 @@ const galleryData = [
   {
     id: "3",
     description: "Description 3",
-    image: "/bg3.jpeg",
+    image: "/Agric/bg3.jpeg",
   },
 ];
 

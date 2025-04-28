@@ -14,7 +14,7 @@ export default function GovernmentPage() {
       <section className="relative h-[40vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src={"/gov.png"}
+            src={"/AboutKudan/GeoEconomy/gov.png"}
             alt="Kudan Government"
             fill
             className="object-cover"
@@ -123,7 +123,7 @@ export default function GovernmentPage() {
                     <div className="flex flex-col items-center">
                       <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
                         <Image
-                          src={"/chairman.jpg"}
+                          src={"chairman.jpg"}
                           alt="Hon. Dauda Ilya Abba"
                           width={128}
                           height={128}
@@ -141,7 +141,7 @@ export default function GovernmentPage() {
                     <div className="flex flex-col items-center">
                       <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
                         <Image
-                          src={"/vice.jpg"}
+                          src={"vice.jpg"}
                           alt="Usman Abbas Likoro"
                           width={128}
                           height={128}
