@@ -20,6 +20,7 @@ export default function RootLayout({
   return (
       <html lang="en" suppressHydrationWarning={true}>
       <body className={inter.className}>
+      <link rel="icon" type="image/svg+xml" href="/logo.png" />
         <ThemeProvider attribute="class" defaultTheme="light">
           <Navbar />
           <main>{children}</main>

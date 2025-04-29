@@ -164,7 +164,7 @@ export default function AgriculturePage() {
               </CardHeader>
               <CardContent>
                 <Image 
-                  src="https://images.unsplash.com/photo-1622826168303-c870adc78b6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  src="https://www.dayoadetiloye.com/wp-content/uploads/2017/10/SUGARCANE-FARMING-BUSINESS-PLAN-IN-NIGERIA-1-1024x1024.jpg" 
                   alt="Sugarcane"
                   width={400}
                   height={300}

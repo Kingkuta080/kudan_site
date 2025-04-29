@@ -35,7 +35,7 @@ export default function News() {
       <section className="relative h-[40vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1495020689067-958852a7765e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+            src="https://sdmntprwestus.oaiusercontent.com/files/00000000-baac-6230-aef0-751365b51b6e/raw?se=2025-04-29T10%3A59%3A03Z&sp=r&sv=2024-08-04&sr=b&scid=964d6c54-f1f7-5065-a791-6ca9ff6cbd35&skoid=e4438ed3-2a6f-4fd3-bf63-222012dc627c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-29T03%3A16%3A30Z&ske=2025-04-30T03%3A16%3A30Z&sks=b&skv=2024-08-04&sig=HkFC3ylPtR4MBXFrTPEalGsxPpIEvkgSz5N%2B8oojdGo%3D"
             alt="News and Events"
             fill
             className="object-cover"
