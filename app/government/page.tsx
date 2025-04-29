@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { usePathname } from "next/navigation";
 
+
 export default function GovernmentPage() {
   const pathname = usePathname(); // Get the current path
 
@@ -14,7 +15,7 @@ export default function GovernmentPage() {
       <section className="relative h-[40vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src={"/AboutKudan/GeoEconomy/gov.png"}
+            src={"/GovHero.jpg"}
             alt="Kudan Government"
             fill
             className="object-cover"

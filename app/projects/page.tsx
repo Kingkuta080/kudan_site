@@ -65,14 +65,14 @@ export default function ProjectsPage() {
 
             <div className="relative group overflow-hidden rounded-lg shadow-lg">
               <Image 
-                src="" 
+                src="/Kudan Website Images/Gallery/Medical Outreach Programme/HealthCare.png" 
                 alt="Healthcare Center Renovation"
                 width={400}
                 height={300}
                 className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6 text-white">
-                <h3 className="text-xl font-semibold mb-2">Renovation of Primary Healthcare Centers</h3>
+                <h3 className="text-xl font-semibold mb-2">Primary Healthcare Events</h3>
                 <p className="text-sm mb-4">
                   Access to quality healthcare is essential for our community’s well-being. We are focusing on rehabilitation by updating essential systems, reinforcing structural integrity, and modernizing interiors.
                 </p>
@@ -174,7 +174,7 @@ export default function ProjectsPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <Image 
-                    src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    src="/bg4.png" 
                     alt="KADI"
                     width={400}
                     height={300}

@@ -11,18 +11,33 @@ import { useRouter } from "next/navigation";
 const galleryData = [
   {
     id: "1",
-    description: "Description 1",
+    description: "This is a farmer working on his farm in Kudan",
     image: "/bg1.png",
   },
   {
     id: "2",
-    description: "Description 2",
+    description: "A large farmland comprising of different crops",
     image: "/bg2.png",
   },
   {
     id: "3",
-    description: "Description 3",
+    description: "Livestock rearing in Kudan",
     image: "/Agric/bg3.jpeg",
+  },
+  {
+    id: "4",
+    description: "This is a grape farm in Kudan. On of the largest in the country",
+    image: "/Kudan Website Images/Agriculture/grapes.jpg",
+  },
+  {
+    id: "5",
+    description: "This is the Dam in Kudan used for agricultural purposes",
+    image: "/ScreenShots/dam.png",
+  },
+  {
+    id: "6",
+    description: "The Chairman of Kudan Visiting a company in Kudan",
+    image: "/Kudan Website Images/Gallery/Visit to Narict.jpg",
   },
 ];
 

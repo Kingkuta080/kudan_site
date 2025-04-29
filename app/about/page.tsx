@@ -14,7 +14,7 @@ export default function AboutPage() {
       <section className="relative h-[40vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+            src="/AboutKudan/About Kudan.jpg"
             alt="Kudan Local Government"
             fill
             className="object-cover"
@@ -158,7 +158,7 @@ export default function AboutPage() {
 
                 <div>
                   <Image
-                    src="https://images.unsplash.com/photo-1604689598793-b8bf1dc445a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    src="/AboutKudan/About Kudan.jpg"
                     alt="Kudan Local Government Area"
                     width={600}
                     height={400}
@@ -167,14 +167,14 @@ export default function AboutPage() {
 
                   <div className="grid grid-cols-2 gap-4">
                     <Image
-                      src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                      src="/Agric/agro.png"
                       alt="Kudan Landscape"
                       width={300}
                       height={200}
                       className="rounded-lg shadow-md"
                     />
                     <Image
-                      src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                      src="/bg2.png"
                       alt="Kudan Community"
                       width={300}
                       height={200}
@@ -219,7 +219,7 @@ export default function AboutPage() {
 
                 <div>
                   <Image
-                    src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    src="https://th.bing.com/th/id/OIP.w3vOtFmTc8J6mWZgenMu7AHaE8?rs=1&pid=ImgDetMain"
                     alt="Historical Representation of Kudan"
                     width={600}
                     height={400}
@@ -277,7 +277,7 @@ export default function AboutPage() {
 
                 <div>
                   <Image
-                    src="https://images.unsplash.com/photo-1566994616736-69fe8cc420f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    src="https://th.bing.com/th/id/OIP.qU3TGfGdqKctuezuZW6R2gHaEJ?rs=1&pid=ImgDetMain"
                     alt="Cultural Celebration"
                     width={600}
                     height={400}
@@ -286,14 +286,14 @@ export default function AboutPage() {
 
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <Image
-                      src="https://images.unsplash.com/photo-1551913902-c92207136625?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                      src="https://th.bing.com/th/id/OIP.48OQJDMDFyyvhyrDeHzLdwHaE-?rs=1&pid=ImgDetMain"
                       alt="Traditional Music"
                       width={300}
                       height={200}
                       className="rounded-lg shadow-md"
                     />
                     <Image
-                      src="https://images.unsplash.com/photo-1504173010664-32509aeebb62?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                      src="https://th.bing.com/th/id/R.946cba39f029274a31caec7ff9ccc9bf?rik=XPODj6wfTAa0HQ&pid=ImgRaw&r=0"
                       alt="Traditional Crafts"
                       width={300}
                       height={200}

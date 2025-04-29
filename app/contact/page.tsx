@@ -106,8 +106,8 @@ export default function ContactPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700">
-                  Main Office: +234 XXX XXX XXXX<br />
-                  Customer Service: +234 XXX XXX XXXX
+                  Main Office: +234 701 140 4040<br />
+                  Customer Service: +234 701 140 4040
                 </p>
               </CardContent>
             </Card>
