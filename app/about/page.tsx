@@ -277,7 +277,7 @@ export default function AboutPage() {
 
                 <div>
                   <Image
-                    src="https://th.bing.com/th/id/OIP.qU3TGfGdqKctuezuZW6R2gHaEJ?rs=1&pid=ImgDetMain"
+                    src="https://th.bing.com/th/id/R.946cba39f029274a31caec7ff9ccc9bf?rik=XPODj6wfTAa0HQ&pid=ImgRaw&r=0"
                     alt="Cultural Celebration"
                     width={600}
                     height={400}
@@ -293,7 +293,7 @@ export default function AboutPage() {
                       className="rounded-lg shadow-md"
                     />
                     <Image
-                      src="https://th.bing.com/th/id/R.946cba39f029274a31caec7ff9ccc9bf?rik=XPODj6wfTAa0HQ&pid=ImgRaw&r=0"
+                      src="https://th.bing.com/th/id/OIP.Z7LeGgl8m2RfMrsrsyxIzQAAAA?rs=1&pid=ImgDetMain"
                       alt="Traditional Crafts"
                       width={300}
                       height={200}

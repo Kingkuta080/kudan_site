@@ -13,13 +13,13 @@ export default function Hero() {
 
   const slides = [
     {
-      image: Bg1,
+      image: Bg2,
       title: "Welcome to Kudan Local Government",
       subtitle:
         "Farming is our source of pride. Our vibrant community thrives on agricultural excellence, producing maize, millet, and groundnuts in abundance. With fertile lands and hardworking farmers, Kudan continues to lead in food security and sustainability.",
     },
     {
-      image: Bg2,
+      image: Bg1,
       title: "Kudan is not just about agriculture",
       subtitle:
         "It’s a community of unity and progress. Our local economy flourishes through trade, education, and infrastructural development, reflecting our commitment to growth and modernization.",

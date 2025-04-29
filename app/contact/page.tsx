@@ -105,10 +105,11 @@ export default function ContactPage() {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700">
-                  Main Office: +234 701 140 4040<br />
-                  Customer Service: +234 701 140 4040
-                </p>
+              <p className="text-gray-700">
+                Main Office: <a href="tel:+2347011404040" className="text-blue-600 hover:underline">+234 7011404040</a><br />
+                Customer Service: <a href="tel:07011404040" className="text-blue-600 hover:underline">07011404040</a>
+              </p>
+
               </CardContent>
             </Card>
             
@@ -120,10 +121,11 @@ export default function ContactPage() {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700">
-                  General Inquiries: info@kudanlga.gov.ng<br />
-                  Support: support@kudanlga.gov.ng
-                </p>
+              <p className="text-gray-700">
+                General Inquiries: <a href="mailto:info@kudanlga.gov.ng" className="text-blue-600 hover:underline">info@kudanlga.gov.ng</a><br />
+                Support: <a href="mailto:support@kudanlga.gov.ng" className="text-blue-600 hover:underline">support@kudanlga.gov.ng</a>
+              </p>
+
               </CardContent>
             </Card>
             

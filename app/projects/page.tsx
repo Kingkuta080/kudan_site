@@ -65,7 +65,7 @@ export default function ProjectsPage() {
 
             <div className="relative group overflow-hidden rounded-lg shadow-lg">
               <Image 
-                src="/Kudan Website Images/Gallery/Medical Outreach Programme/HealthCare.png" 
+                src={"/HealthCare.png"} 
                 alt="Healthcare Center Renovation"
                 width={400}
                 height={300}

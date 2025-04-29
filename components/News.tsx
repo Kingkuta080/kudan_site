@@ -30,7 +30,7 @@ export default function News() {
             transition={{ duration: 0.6 }}
             className="text-3xl font-bold text-green-800 mb-4"
           >
-            News - Stay in Touch with Us
+           Latest News - Stay in Touch with Us
           </motion.h2>
 
           <motion.div
