@@ -73,7 +73,27 @@ export default function Gallery() {
   };
 
   return (
-    <div className="py-16 bg-green-50">
+    <div className="bg-green-50">
+       <section className="relative h-[40vh] flex items-center mb-10 mt-0">
+            <div className="absolute inset-0 z-0">
+               <Image
+                src="/bg1.png"
+                alt="Gallery"
+                fill
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+            </div>
+            
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-white">
+               <h1 className="text-4xl md:text-5xl font-bold mb-4">Discover the Art of Kudan</h1>
+               <p className="text-xl max-w-3xl">
+               A visual journey through the moments, stories, and creativity that shape the Kudan Local Government experience.
+               </p>
+             </div>
+           </section>
+           
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title Section */}
         <div className="text-center mb-12">

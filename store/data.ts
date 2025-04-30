@@ -18,7 +18,7 @@ export const newsData: NewsData[] = [
       date: "June 15, 2025",
       description: "Kudan Agricultural Development Company (KADCO) has been established to support local farmers with modern farming techniques and access to markets.",
       content: "Full details about KADCO establishment... (longer content here)",
-      images: ["/news/2.jpg"]
+      images: ["/news/KADCO LOGO.svg"]
     },
     {
       slug: "new-bye-laws-established",
@@ -48,16 +48,16 @@ export const newsData: NewsData[] = [
     {
       title: "Borehole Constructions",
       description: "Borehole Construction to Mitigate Water Shortages for Local Farmers",
-      image: "/projects/1.jpg",
+      image: "/projects/1.JPG",
     },
     {
       title: "Healthcare Center Renovations",
       description: "Rehabilitation of primary healthcare Centers for better service delivery",
-      image: "/projects/2.jpg",
+      image: "/HealthCare.png",
     },
     {
       title: "WASH Program",
       description: "Improving community health by ensuring access to Water, Sanitation, and Proper Hygiene Practices",
-      image: "/projects/3.jpg",
+      image: "/projects/3.JPG",
     },
   ];

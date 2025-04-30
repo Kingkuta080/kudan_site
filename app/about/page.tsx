@@ -158,7 +158,7 @@ export default function AboutPage() {
 
                 <div>
                   <Image
-                    src="/AboutKudan/About Kudan.jpg"
+                    src="/GovHero.jpg"
                     alt="Kudan Local Government Area"
                     width={600}
                     height={400}
@@ -219,7 +219,7 @@ export default function AboutPage() {
 
                 <div>
                   <Image
-                    src="https://th.bing.com/th/id/OIP.w3vOtFmTc8J6mWZgenMu7AHaE8?rs=1&pid=ImgDetMain"
+                    src="https://th.bing.com/th/id/OIP.5IoCmTTRgUbNcKP7aDvNlgHaFY?rs=1&pid=ImgDetMain"
                     alt="Historical Representation of Kudan"
                     width={600}
                     height={400}

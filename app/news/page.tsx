@@ -35,7 +35,7 @@ export default function News() {
       <section className="relative h-[40vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/news/1.png"
+            src="/news/newsHero.png"
             alt="News"
             fill
             className="object-cover"
