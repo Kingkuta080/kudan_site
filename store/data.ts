@@ -53,7 +53,7 @@ export const newsData: NewsData[] = [
     {
       title: "Healthcare Center Renovations",
       description: "Rehabilitation of primary healthcare Centers for better service delivery",
-      image: "/projects/2.jpg",
+      image: "/healthcare.png",
     },
     {
       title: "WASH Program",
