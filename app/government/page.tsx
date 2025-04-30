@@ -86,7 +86,7 @@ export default function GovernmentPage() {
                         <span className="font-medium">Secretary to the Local Government:</span> Mohammed Sani Zubair
                       </li>
                       <li>
-                        <span className="font-medium">Supervisory Council:</span> Consists of appointed members from the Administrative Department
+                        <span className="font-medium">Supervisory Councilors & Special Advisors:</span> Consists of appointed members by the Government
                       </li>
                     </ul>
 
@@ -95,7 +95,7 @@ export default function GovernmentPage() {
                     </h3>
                     <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4">
                       <li>
-                        <span className="font-medium">Speaker of the Legislative Council:</span> [Name]
+                        <span className="font-medium">Speaker of the Legislative Council:</span> Hon. DanAzumi Gaba Kauran Wali
                       </li>
                       <li>
                         <span className="font-medium">Members of the Council:</span> 10 elected councillors representing each ward
@@ -124,6 +124,23 @@ export default function GovernmentPage() {
                     <div className="flex flex-col items-center">
                       <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
                         <Image
+                          src={"/uba.jpeg"}
+                          alt="Governor Uba Sani"
+                          width={128}
+                          height={128}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      <h4 className="text-lg font-medium text-green-800">
+                       Senator Uba Sani
+                      </h4>
+                      <p className="text-gray-600">Governor</p>
+                    </div>
+                  </div>
+
+                      <div className="flex flex-col items-center">
+                      <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
+                        <Image
                           src={"chairman.jpg"}
                           alt="Hon. Dauda Ilya Abba"
                           width={128}
@@ -136,7 +153,6 @@ export default function GovernmentPage() {
                       </h4>
                       <p className="text-gray-600">Chairman</p>
                     </div>
-                  </div>
 
                   <div className="bg-green-50 p-6 rounded-lg shadow-md mb-6">
                     <div className="flex flex-col items-center">
