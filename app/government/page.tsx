@@ -86,7 +86,7 @@ export default function GovernmentPage() {
                         <span className="font-medium">Secretary to the Local Government:</span> Mohammed Sani Zubair
                       </li>
                       <li>
-                        <span className="font-medium">Supervisory Councilors & Special Advisors:</span> Consists of appointed members by the Government
+                        <span className="font-medium">Supervisory Councilors & Special Advisors:</span> Consists of members appointed by the Government
                       </li>
                     </ul>
 
