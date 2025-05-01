@@ -93,8 +93,8 @@ const Footer = () => {
             <Image
               src={Logo}
               alt="Kudan LGA Logo"
-              width={100}
-              height={50}
+              width={70}
+              height={70}
               className="mb-4"
             />
             <p className="text-sm mb-4">

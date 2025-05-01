@@ -6,29 +6,7 @@ import { useState } from "react";
 import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 import { Button } from "./ui/button";
 import Link from "next/link";
-
-const galleryData = [
-  {
-    id: "1",
-    title: "Image 1",
-    description: "Description 1",
-    image: "/bg1.png",
-  },
-  {
-    id: "2",
-    title: "Image 2",
-    description: "Description 2",
-    image: "/bg2.png",
-  },
-  {
-    id: "3",
-    title: "Image 3",
-    description: "Description 3",
-    image: "/Agric/bg3.jpeg",
-  },
-  
-  
-];
+import { galleryData } from "@/store/data";
 
 
 interface GalleryItem {
