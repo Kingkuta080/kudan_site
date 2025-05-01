@@ -174,7 +174,8 @@ export default function AboutPage() {
                       className="rounded-lg shadow-md"
                     />
                     <Image
-                      src="/bg2.png"
+                      src="/AboutKudan/GeoEconomy/gov.png"
+
                       alt="Kudan Community"
                       width={300}
                       height={200}
@@ -353,7 +354,8 @@ export default function AboutPage() {
 
             <div>
               <Image
-                src="/AboutKudan/GeoEconomy/gov.png"
+                src="/bg2.png"
+
                 alt="Kudan Landscape"
                 width={600}
                 height={400}

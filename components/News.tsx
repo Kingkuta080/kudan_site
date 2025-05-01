@@ -53,7 +53,7 @@ export default function News() {
                     alt={news.title}
                     width={400}
                     height={300}
-                    className="w-86 h-48 object-cover rounded-md mb-4"
+                    className="w-86 h-40 object-cover rounded-md mb-4"
                   />
                   <p className="text-gray-700 mb-4">{news.description}</p>
                 </CardContent>

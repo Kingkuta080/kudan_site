@@ -187,7 +187,7 @@ export default function Gallery() {
         )}
 
         {/* View More Button */}
-        <div className="flex justify-center mt-12">
+        <div className="flex justify-center mt-12 mb-12">
           <Link href="/">
             <Button
               variant="outline"

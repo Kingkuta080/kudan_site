@@ -138,22 +138,25 @@ export default function GovernmentPage() {
                     </div>
                   </div>
 
-                      <div className="flex flex-col items-center">
+                  <div>
+                  <div className="bg-green-50 p-6 rounded-lg shadow-md mb-6">
+                    <div className="flex flex-col items-center">
                       <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
                         <Image
                           src={"chairman.jpg"}
-                          alt="Hon. Dauda Ilya Abba"
+                          alt="Governor Uba Sani"
                           width={128}
                           height={128}
                           className="w-full h-full object-cover"
                         />
                       </div>
                       <h4 className="text-lg font-medium text-green-800">
-                        Hon. Dauda Ilya Abba
+                      Hon. Dauda Ilya Abba
                       </h4>
                       <p className="text-gray-600">Chairman</p>
                     </div>
-
+                  </div>
+                  </div>
                   <div className="bg-green-50 p-6 rounded-lg shadow-md mb-6">
                     <div className="flex flex-col items-center">
                       <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
@@ -172,6 +175,7 @@ export default function GovernmentPage() {
                     </div>
                   </div>
                 </div>
+
               </div>
             </TabsContent>
 
