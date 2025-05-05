@@ -46,7 +46,7 @@ export default function ProjectsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="relative group overflow-hidden rounded-lg shadow-lg">
               <Image 
-                src={"/projects/1.JPG"} 
+                src={"/projects/1.png"} 
                 alt="Borehole Construction"
                 width={400}
                 height={300}
@@ -84,7 +84,7 @@ export default function ProjectsPage() {
 
             <div className="relative group overflow-hidden rounded-lg shadow-lg">
               <Image 
-                src={"/projects/3.JPG"} 
+                src={"/projects/3.png"} 
                 alt="Road Construction"
                 width={400}
                 height={300}
