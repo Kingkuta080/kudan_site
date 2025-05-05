@@ -47,7 +47,7 @@ export const newsData: NewsData[] = [
     {
       title: "Borehole Constructions",
       description: "Borehole Construction to Mitigate Water Shortages for Local Farmers",
-      image: "/projects/1.JPG",
+      image: "/1.JPG",
     },
     {
       title: "Healthcare Center Renovations",
@@ -57,7 +57,7 @@ export const newsData: NewsData[] = [
     {
       title: "WASH Program",
       description: "Improving community health by ensuring access to Water, Sanitation, and Proper Hygiene Practices",
-      image: "/projects/3.JPG",
+      image: "/3.JPG",
     },
   ];
 
