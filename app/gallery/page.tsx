@@ -73,7 +73,7 @@ export default function Gallery() {
   };
 
   return (
-    <div className="bg-green-50">
+    <div className="bg-white">
        <section className="relative h-[40vh] flex items-center mb-10 mt-0">
             <div className="absolute inset-0 z-0">
                <Image
