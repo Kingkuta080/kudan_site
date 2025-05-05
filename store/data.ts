@@ -67,19 +67,19 @@ export const newsData: NewsData[] = [
       id: "1",
       title: "Image 1",
       description: "Description 1",
-      image: "/public/bg1.png",
+      image: "/bg1.png",
     },
     {
       id: "2",
       title: "Image 2",
       description: "Description 2",
-      image: "/public/bg2.png",
+      image: "/bg2.png",
     },
     {
       id: "3",
       title: "Image 3",
       description: "Description 3",
-      image: "/public/Agric/bg3.jpeg",
+      image: "/Agric/bg3.jpeg",
     },
     
     
