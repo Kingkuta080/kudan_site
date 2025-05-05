@@ -81,24 +81,6 @@ export const newsData: NewsData[] = [
       description: "Description 3",
       image: "/Agric/bg3.jpeg",
     },
-    {
-      id: "3",
-      title: "Image 3",
-      description: "Description 3",
-      image: "/Agric/bg3.jpeg",
-    },
-    {
-      id: "3",
-      title: "Image 3",
-      description: "Description 3",
-      image: "/Agric/bg3.jpeg",
-    },
-    {
-      id: "3",
-      title: "Image 3",
-      description: "Description 3",
-      image: "/Agric/bg3.jpeg",
-    },
     
     
   ];  
