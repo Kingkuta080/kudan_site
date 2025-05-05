@@ -43,7 +43,6 @@ export const newsData: NewsData[] = [
   
   ];
 
-
   export const projects = [
     {
       title: "Borehole Constructions",
