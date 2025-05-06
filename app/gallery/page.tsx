@@ -27,7 +27,7 @@ const galleryData = [
   {
     id: "4",
     description: "This is a grape farm in Kudan. On of the largest in the country",
-    image: "/Kudan Website Images/Agriculture/grapes.jpg",
+    image: "/Kudan Website Images/grapes.jpg",
   },
   {
     id: "5",
