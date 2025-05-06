@@ -136,11 +136,11 @@ export default function ProjectsPage() {
 
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
-                <CardTitle className="text-green-800">Kudan Enterprise Development Program (KEDEP)</CardTitle>
+                <CardTitle className="text-green-800">KEDEP Program</CardTitle>
               </CardHeader>
               <CardContent>
                 <Image 
-                  src="" 
+                  src="/kedep.jpeg" 
                   alt="Enterprise Development"
                   width={400}
                   height={300}
