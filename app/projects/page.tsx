@@ -174,11 +174,11 @@ export default function ProjectsPage() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <Image 
-                    src="/bg4.png" 
+                    src="/KADI.png" 
                     alt="KADI"
                     width={400}
                     height={300}
-                    className="w-full h-48 object-cover rounded-md mb-4"
+                    className="w-full h-64 object-cover rounded-md mb-4"
                   />
                 </div>
                 <div>
