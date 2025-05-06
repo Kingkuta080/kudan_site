@@ -29,17 +29,41 @@ const Navbar = () => {
     <nav className="bg-green-800 text-white sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Logo - Responsive sizing */}
-          <Link href="/" className="flex-shrink-0">
-            <Image
-              src={Logo}
-              alt="Kudan Logo"
-              width={80}
-              height={80}
-              className="rounded-full w-12 h-12 sm:w-16 sm:h-16 md:w-16 md:h-16 hover:opacity-90 transition-opacity"
-              priority
-            />
-          </Link>
+          {/* Logo section - Different for mobile and desktop */}
+          <div className="flex items-center">
+            {/* Mobile: Text "Kudan LGA" */}
+            <div className="md:hidden text-xl font-bold">
+              Kudan LGA
+            </div>
+            
+            {/* Desktop: Logo (same as before) */}
+            <div className="hidden md:block">
+              <Link href="/" className="flex-shrink-0">
+                <Image
+                  src={Logo}
+                  alt="Kudan Logo"
+                  width={80}
+                  height={80}
+                  className="rounded-full w-12 h-12 sm:w-16 sm:h-16 md:w-16 md:h-16 hover:opacity-90 transition-opacity"
+                  priority
+                />
+              </Link>
+            </div>
+          </div>
+
+          {/* Mobile: Centered Logo */}
+          <div className="md:hidden flex justify-center">
+            <Link href="/" className="flex-shrink-0">
+              <Image
+                src={Logo}
+                alt="Kudan Logo"
+                width={60}
+                height={60}
+                className="rounded-full w-10 h-10 hover:opacity-90 transition-opacity"
+                priority
+              />
+            </Link>
+          </div>
 
           {/* Desktop Navigation - Enhanced responsive spacing */}
           <div className="hidden md:flex flex-1 justify-center">
