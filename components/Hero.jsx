@@ -110,8 +110,12 @@ export default function Hero() {
               exit="hidden"
               variants={textVariants}
               transition={{ duration: 0.4 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-shadow-lg"
+              style={{
+                textShadow: "0 2px 4px rgba(0, 0, 0, 0.7)",
+              }}
             >
+              {/* Slide Title */}
               {slides[currentSlide].title}
             </motion.h1>
 
@@ -123,7 +127,10 @@ export default function Hero() {
               exit="hidden"
               variants={textVariants}
               transition={{ duration: 0.4, delay: 0.1 }}
-              className="text-md mb-8"
+              className="text-md mb-8 text-shadow-lg"
+              security={{
+                textShadow: "0 2px 4px rgba(0, 0, 0, 0.7)",
+              }}
             >
               {slides[currentSlide].subtitle}
             </motion.p>
