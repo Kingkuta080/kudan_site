@@ -43,7 +43,7 @@ export default function Chairman() {
   };
 
   return (
-    <div className="py-16 bg-green-50">
+    <div className="py-16 bg-green-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title Section */}
         <motion.div
@@ -52,7 +52,7 @@ export default function Chairman() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl font-bold text-green-800 mb-4">
+          <h2 className="text-3xl font-bold text-white mb-4">
             Message from the Chairman
           </h2>
           <div className="w-24 h-1 bg-green-600 mx-auto"></div>
@@ -84,19 +84,19 @@ export default function Chairman() {
             className="order-2 md:order-2"
             variants={itemVariants}
           >
-            <h3 className="text-2xl font-semibold text-green-800 mb-4">
+            <h3 className="text-2xl font-semibold text-white mb-4">
               Hon. Dauda Ilya Abba
             </h3>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-400 mb-4">
             I warmly welcome you to explore our community’s rich heritage and promising future.
             This website is your window into our agricultural achievements, community projects, and cultural heritage.
             Our administration is committed to transparent governance,
             sustainable development, and improving the quality of life for all residents of Kudan.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-400 mb-4">
             While we provide informative content about our ongoing projects and initiatives, we invite you to contact us for any further details or collaborative opportunities. 
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="text-gray-400 mb-4">
             Thank you for visiting, and I look forward to sharing the remarkable journey of Kudan with you.
             </p>
             {/* <div className="mt-6 flex items-center">
