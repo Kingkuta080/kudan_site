@@ -26,7 +26,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-green-800 text-white sticky top-0 z-50 shadow-lg">
+    <nav className="bg-white text-green-900 sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo section - Different for mobile and desktop */}
@@ -72,7 +72,7 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`px-3 py-2 text-sm lg:text-base font-semibold text-white relative hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-[2px] hover:after:bg-white hover:after:transition-all hover:after:duration-300 ${
+                  className={`px-3 py-2 text-sm lg:text-base font-semibold text-green-900 relative hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-[2px] hover:after:bg-white hover:after:transition-all hover:after:duration-300 ${
                     pathname === link.href
                       ? "after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-white"
                       : ""
@@ -88,7 +88,7 @@ const Navbar = () => {
           <div className="hidden md:block">
             <Button
               asChild
-              className="bg-green-700 hover:bg-green-600 text-white text-sm lg:text-base px-6 py-3 rounded-md transition-colors duration-300 shadow-sm hover:shadow-md"
+              className="bg-green-700 hover:bg-green-600 text-green-900 text-sm lg:text-white px-6 py-3 rounded-md transition-colors duration-300 shadow-sm hover:shadow-md"
             >
               <Link href="/contact">Contact Us</Link>
             </Button>
@@ -100,7 +100,7 @@ const Navbar = () => {
               variant="ghost"
               size="icon"
               onClick={toggleMenu}
-              className="text-white hover:bg-green-700 h-10 w-10 rounded-md transition-colors duration-300"
+              className="text-green-900 hover:bg-green-700 h-10 w-10 rounded-md transition-colors duration-300"
               aria-label="Toggle Menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -116,7 +116,7 @@ const Navbar = () => {
                 <Link
                   key={link.name}
                   href={link.href}
-                  className={`block px-4 py-3 text-base font-semibold text-white relative hover:after:absolute hover:after:bottom-2 hover:after:left-4 hover:after:w-[calc(100%-2rem)] hover:after:h-[2px] hover:after:bg-white hover:after:transition-all hover:after:duration-300 ${
+                  className={`block px-4 py-3 text-base font-semibold text-green-900 relative hover:after:absolute hover:after:bottom-2 hover:after:left-4 hover:after:w-[calc(100%-2rem)] hover:after:h-[2px] hover:after:bg-white hover:after:transition-all hover:after:duration-300 ${
                     pathname === link.href
                       ? "after:absolute after:bottom-2 after:left-4 after:w-[calc(100%-2rem)] after:h-[2px] after:bg-white"
                       : ""
@@ -128,7 +128,7 @@ const Navbar = () => {
               ))}
               <Button
                 asChild
-                className="w-full mt-2 bg-green-700 hover:bg-green-600 text-white py-3 text-base font-semibold rounded-md transition-colors duration-300"
+                className="w-full mt-2 bg-green-700 hover:bg-green-600 text-green-900 py-3 text-base font-semibold rounded-md transition-colors duration-300"
               >
                 <Link href="/contact">Contact Us</Link>
               </Button>
